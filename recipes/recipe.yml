@@ -7,7 +7,7 @@ description: This is my personal OS image for my thinkpad.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: quay.io/fedora-ostree-desktops/sway-atomic
-image-version: latest # You can pin to a specific version of Fedora as well
+image-version: 44 # You can pin to a specific version of Fedora as well
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -16,6 +16,56 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  # nonfree multimedia codecs & general cleanup
+  - type: dnf
+    install:
+      packages:
+        - adw-gtk3-theme
+        - ffmpegthumbnailer
+        - pipewire-libs-extra
+    remove:
+      packages:
+        - fedora-flathub-remote
+        - fedora-third-party
+        - fedora-workstation-repositories
+        - firefox
+        - firefox-langpacks
+        - fuse
+        - passim
+        - fedora-chromium-config
+    replace:
+      - from-repo: fedora-multimedia
+        skip-unavailable: true
+        packages:
+          - libva
+          - libva-intel-media-driver
+          - mesa-dri-drivers
+          - mesa-filesystem
+          - mesa-libEGL
+          - mesa-libGL
+          - mesa-libgbm
+          - mesa-va-drivers
+          - mesa-vulkan-drivers
+          - old: ffmpeg-free
+            new: ffmpeg
+          - old: libavcodec-free
+            new: libavcodec
+          - old: libavdevice-free
+            new: libavdevice
+          - old: libavfilter-free
+            new: libavfilter
+          - old: libavformat-free
+            new: libavformat
+          - old: libavutil-free
+            new: libavutil
+          - old: libpostproc-free
+            new: libpostproc
+          - old: libswresample-free
+            new: libswresample
+          - old: libswscale-free
+            new: libswscale
+
 
   - type: dnf
     repos:
@@ -31,8 +81,7 @@ modules:
       packages:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+         # also remove firefox dependency (not required for all packages, this is a special case)
 
   #- type: default-flatpaks
   #  configurations:
