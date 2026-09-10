@@ -22,6 +22,8 @@ modules:
     install:
       packages:
         - adw-gtk3-theme
+        - 7zip
+        - rsync
     remove:
       packages:
         - fedora-flathub-remote
@@ -35,7 +37,7 @@ modules:
 
   - type: dnf
     replace:
-      - from-repo: fedora-multimedia
+      - from-repo: negativo17
         skip-unavailable: true
         packages:
           - libva
@@ -50,7 +52,7 @@ modules:
 
   - type: dnf
     replace:
-      - from-repo: fedora-multimedia
+      - from-repo: negativo17
         skip-unavailable: true
         packages:
           - old: ffmpeg-free
