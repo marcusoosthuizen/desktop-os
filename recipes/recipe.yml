@@ -36,6 +36,8 @@ modules:
         - fedora-chromium-config
 
   - type: dnf
+    repos:
+      nonfree: negativo17
     replace:
       - from-repo: negativo17
         skip-unavailable: true
