@@ -39,7 +39,7 @@ modules:
     repos:
       nonfree: negativo17
     replace:
-      - from-repo: negativo17 - Multimedia
+      - from-repo: "negativo17 - Multimedia"
         skip-unavailable: true
         packages:
           - libva
@@ -54,7 +54,7 @@ modules:
 
   - type: dnf
     replace:
-      - from-repo: negativo17 - Multimedia
+      - from-repo: "negativo17 - Multimedia"
         skip-unavailable: true
         packages:
           - old: ffmpeg-free
