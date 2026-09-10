@@ -22,8 +22,6 @@ modules:
     install:
       packages:
         - adw-gtk3-theme
-        - ffmpegthumbnailer
-        - pipewire-libs-extra
     remove:
       packages:
         - fedora-flathub-remote
