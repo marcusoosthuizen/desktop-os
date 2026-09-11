@@ -1,102 +1,32 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
+
 name: desktop-os
-# description will be included in the image's metadata
 description: This is my personal OS image for my thinkpad.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: quay.io/fedora-ostree-desktops/sway-atomic
-image-version: 44 # You can pin to a specific version of Fedora as well
+base-image: ghcr.io/ublue-os/base-main
+image-version: 44 # IMAGE VERSION
 
 # module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  # removes fedora bloat & installs utility packages
-  - type: dnf
-    install:
-      packages:
-        - adw-gtk3-theme
-        - 7zip
-        - rsync
-    remove:
-      packages:
-        - fedora-flathub-remote
-        - fedora-third-party
-        - fedora-workstation-repositories
-        - firefox
-        - firefox-langpacks
-        - fuse
-        - passim
-        - fedora-chromium-config
-
-  # installs nonfree multimedia codecs
+  # mangowc & noctalia
   - type: dnf
     repos:
       files:
-        - https://negativo17.org/repos/fedora-multimedia.repo
-    replace:
-    - from-repo: fedora-multimedia
-      skip-unavailable: true
-      packages:
-        - libheif
-        - libva
-        - mesa-dri-drivers
-        - gstreamer1-plugin-libav
-        - mesa-filesystem
-        - mesa-libEGL
-        - mesa-libGL
-        - mesa-libgbm
-        - mesa-vulkan-drivers
-        - libva-intel-media-driver
-        - intel-gmmlib
-        - intel-mediasdk
-        - old: ffmpeg-free
-          new: ffmpeg
-        - old: fdk-aac-free
-          new: libfdk-aac
-        - old: gstreamer1-plugins-ugly-free
-          new: gstreamer1-plugins-ugly
-        - old: libavcodec-free
-          new: libavcodec
-        - old: libavdevice-free
-          new: libavdevice
-        - old: libavfilter-free
-          new: libavfilter
-        - old: libavformat-free
-          new: libavformat
-        - old: libavutil-free
-          new: libavutil
-        - old: libpostproc-free
-          new: libpostproc
-        - old: libswresample-free
-          new: libswresample
-        - old: libswscale-free
-          new: libswscale
-    install:
-      install-weak-deps: false
-      packages:
-      - repo: fedora-multimedia
-        packages:
-          - mesa-va-drivers
-
-  # installs noctalia shell & removes old shell applications
-  - type: dnf
+        - https://repos.fyralabs.com/terra44/ # IMAGE VERSION
     install:
       packages:
+        - mangowm
         - noctalia
-    remove:
-      packages:
-        - network-manager-applet
-        - waybar
-        - rofi
-        - dunst
-        - kanshi
+        - noctalia-greeter
+
+  # enables greeter
+  - type: systemd
+    system:
+      enabled:
+        - greetd
 
   - type: dnf
     repos:
@@ -108,5 +38,10 @@ modules:
       packages:
         - starship
         - librewolf
+
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

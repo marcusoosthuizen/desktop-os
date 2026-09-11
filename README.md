@@ -1,11 +1,9 @@
 # My Desktop OS &nbsp; [![bluebuild build badge](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml/badge.svg)](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml)
 
-This is my custom atomic image based off Fedora Sway Atomic. It includes a fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [swayfx](https://github.com/wlrfx/swayfx).
+This is my custom atomic image based off [Universal Blue](https://github.com/ublue-os/main). It includes a fully configured setup using [mangowc](https://github.com/mangowm/mango) & [noctalia](https://github.com/noctalia-dev/noctalia).
 
 ## Changes from Base Image
-- Replaces [various packages](https://github.com/marcusoosthuizen/desktop-os/blob/main/recipes/recipe.yml#L39) with nonfree versions
 - Replaces Firefox with [LibreWolf](https://librewolf.net/)
-- Replaces default sway environment with one that uses [noctalia](https://github.com/noctalia-dev/noctalia)
 
 ## Installation
 
