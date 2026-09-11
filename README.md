@@ -1,8 +1,10 @@
-# desktop-os &nbsp; [![bluebuild build badge](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml/badge.svg)](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml)
+# My Desktop OS &nbsp; [![bluebuild build badge](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml/badge.svg)](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+This is my custom atomic image based off Fedora Sway Atomic. It includes a fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [swayfx](https://github.com/wlrfx/swayfx).
 
-After setup, it is recommended you update this README to describe your custom image.
+## Changes from Base Image
+- Replaces [various packages](https://github.com/marcusoosthuizen/desktop-os/blob/main/recipes/recipe.yml#L39) with nonfree versions
+- Replaces Firefox with [LibreWolf](https://librewolf.net/)
 
 ## Installation
 
