@@ -72,7 +72,6 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
     # Noctalia binds
     bindsym $mod+space exec $ipc panel-toggle launcher
-    bindsym $mod+s exec $ipc panel-toggle control-center
     bindsym $mod+comma exec $ipc settings-toggle
 
     # Drag floating windows by holding down $mod and left mouse button.
