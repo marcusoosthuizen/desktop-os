@@ -25,12 +25,12 @@ modules:
     repos:
       copr:
         - atim/starship
-        - cascadia-mono-nf-fonts # for foot & starship
       files:
         - https://repo.librewolf.net/librewolf.repo
     install:
       packages:
         - starship
+        - cascadia-mono-nf-fonts # for foot & starship
         - librewolf
 
   - type: files
