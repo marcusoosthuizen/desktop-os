@@ -31,7 +31,12 @@ modules:
       packages:
         - starship
         - cascadia-mono-nf-fonts # for foot & starship
+        - adw-gtk3-theme # for gtk applications (obviously)
         - librewolf
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks
 
   - type: files
     files:
