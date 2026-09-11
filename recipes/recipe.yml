@@ -15,7 +15,7 @@ modules:
   - type: dnf
     repos:
       files:
-        - https://repos.fyralabs.com/terra44/ # IMAGE VERSION
+        - https://github.com/terrapkg/packages/blob/f44/anda/terra/release/terra.repo # IMAGE VERSION
     install:
       packages:
         - mangowm
