@@ -93,7 +93,6 @@ modules:
     remove:
       packages:
         - network-manager-applet
-        - swaylock
         - waybar
         - rofi
         - dunst

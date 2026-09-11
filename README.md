@@ -5,6 +5,7 @@ This is my custom atomic image based off Fedora Sway Atomic. It includes a fully
 ## Changes from Base Image
 - Replaces [various packages](https://github.com/marcusoosthuizen/desktop-os/blob/main/recipes/recipe.yml#L39) with nonfree versions
 - Replaces Firefox with [LibreWolf](https://librewolf.net/)
+- Replaces default sway environment with one that uses [noctalia](https://github.com/noctalia-dev/noctalia)
 
 ## Installation
 
