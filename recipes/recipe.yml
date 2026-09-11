@@ -85,6 +85,19 @@ modules:
         packages:
           - mesa-va-drivers
 
+  # installs noctalia shell & removes old shell applications
+  - type: dnf
+    install:
+      packages:
+        - noctalia
+    remove:
+      packages:
+        - network-manager-applet
+        - swaylock
+        - waybar
+        - rofi
+        - dunst
+        - kanshi
 
   - type: dnf
     repos:
