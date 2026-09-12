@@ -7,6 +7,7 @@ This is my custom atomic image based off [Universal Blue](https://github.com/ubl
 - Preinstalled with Thunar, imv & mpv
 - Includes [Starship](https://github.com/starship/starship) for a stylish bash shell
 - Replaces Firefox with [LibreWolf](https://librewolf.net/)
+- [Brew](https://brew.sh/) package manager included for dev & cmd utilities
 - All applications themed to match the wallpaper
 
 

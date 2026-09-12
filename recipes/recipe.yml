@@ -50,6 +50,17 @@ modules:
     snippets:
       - "wget -qO- https://git.io/papirus-folders-install | sh" # papirus folders
 
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        install:
+          - org.gtk.Gtk3theme.adw-gtk3-dark # gtk theme for flatpaks
+          - org.gtk.Gtk3theme.adw-gtk3 # gtk theme for flatpaks
+
+  - type: brew
+    nofile-limits: true # increase nofile limits
+    brew-analytics: false # disable telemetry
+
   - type: files
     files:
       - source: system
