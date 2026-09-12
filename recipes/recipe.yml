@@ -35,7 +35,6 @@ modules:
         - gvfs-mtp # MTP support for GVFS
         - thunar-volman # auto USB management for thunar
         - tumbler # thumbnail support for thunar
-        - lxappearance
         - adw-gtk3-theme # gtk theme
         - papirus-icon-theme # icon theme
         - imv
@@ -46,6 +45,10 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+
+  - type: script
+    snippets:
+      - "wget -qO- https://git.io/papirus-folders-install | sh" # papirus folders
 
   - type: files
     files:
