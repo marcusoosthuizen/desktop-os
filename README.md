@@ -3,7 +3,12 @@
 This is my custom atomic image based off [Universal Blue](https://github.com/ublue-os/main). It includes a fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [swayfx](https://github.com/wlrfx/swayfx).
 
 ## Changes from Base Image
+- Fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [swayfx](https://github.com/wlrfx/swayfx)
+- Preinstalled with Thunar, imv & mpv
+- Includes [Starship](https://github.com/starship/starship) for a stylish bash shell
 - Replaces Firefox with [LibreWolf](https://librewolf.net/)
+- All applications themed to match the wallpaper
+
 
 ## Installation
 
