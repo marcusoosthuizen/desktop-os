@@ -31,12 +31,18 @@ modules:
       packages:
         - starship
         - cascadia-mono-nf-fonts # for foot & starship
+        - fastfetch
         - adw-gtk3-theme # for gtk applications (obviously)
         - librewolf
+        - pipx # for pywalfox installation
     remove:
       packages:
         - firefox
         - firefox-langpacks
+
+  - type: script
+    snippets:
+      - "pipx install pywalfox" # installs pywalfox
 
   - type: files
     files:
