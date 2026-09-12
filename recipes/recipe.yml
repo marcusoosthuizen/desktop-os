@@ -32,6 +32,9 @@ modules:
         - starship
         - cascadia-mono-nf-fonts # for foot & starship
         - thunar
+        - gvfs-mtp # MTP support for GVFS
+        - thunar-volman # auto USB management for thunar
+        - tumbler # thumbnail support for thunar
         - adw-gtk3-theme # for gtk applications (obviously)
         - imv
         - mpv
