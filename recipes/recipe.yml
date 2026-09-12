@@ -36,6 +36,7 @@ modules:
         - thunar-volman # auto USB management for thunar
         - tumbler # thumbnail support for thunar
         - adw-gtk3-theme # for gtk applications (obviously)
+        - papirus-icon-theme # mainly for thunar
         - imv
         - mpv
         - librewolf
