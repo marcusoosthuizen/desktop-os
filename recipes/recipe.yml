@@ -35,8 +35,9 @@ modules:
         - gvfs-mtp # MTP support for GVFS
         - thunar-volman # auto USB management for thunar
         - tumbler # thumbnail support for thunar
-        - adw-gtk3-theme # for gtk applications (obviously)
-        - papirus-icon-theme # mainly for thunar
+        - lxappearance
+        - adw-gtk3-theme # gtk theme
+        - papirus-icon-theme # icon theme
         - imv
         - mpv
         - librewolf
