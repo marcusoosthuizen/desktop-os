@@ -39,7 +39,7 @@ modules:
         - papirus-icon-theme # icon theme
         - imv
         - mpv
-        - neovim
+        - helix
         - librewolf
         - pipx # for pywalfox installation
     remove:
