@@ -39,12 +39,14 @@ modules:
         - papirus-icon-theme # icon theme
         - imv
         - mpv
+        - neovim
         - librewolf
         - pipx # for pywalfox installation
     remove:
       packages:
         - firefox
         - firefox-langpacks
+        - vim
 
   - type: script
     snippets:
