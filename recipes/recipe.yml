@@ -46,7 +46,11 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
-        - vim
+        - vim-common
+        - vim-data
+        - vim-enhanced
+        - vim-filesystem
+        - vim-minimal
 
   - type: script
     snippets:
