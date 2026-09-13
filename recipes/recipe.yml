@@ -25,6 +25,7 @@ modules:
     repos:
       copr:
         - atim/starship
+        - dejan/lazygit
       files:
         - https://repo.librewolf.net/librewolf.repo
     install:
@@ -40,6 +41,7 @@ modules:
         - imv
         - mpv
         - helix
+        - lazygit
         - librewolf
         - pipx # for pywalfox installation
     remove:
