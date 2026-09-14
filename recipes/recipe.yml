@@ -58,13 +58,6 @@ modules:
     snippets:
       - "wget -qO- https://git.io/papirus-folders-install | sh" # papirus folders
 
-  - type: default-flatpaks
-    configurations:
-      - notify: true
-        install:
-          - org.gtk.Gtk3theme.adw-gtk3-dark # gtk theme for flatpaks
-          - org.gtk.Gtk3theme.adw-gtk3 # gtk theme for flatpaks
-
   - type: brew
     nofile-limits: true # increase nofile limits
     brew-analytics: false # disable telemetry
@@ -73,5 +66,9 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: chezmoi
+    repository: "https://github.com/marcusoosthuizen/dotfiles" # my dotfiles repo
+    file-conflict-policy: replace # override changed files with those from the repo
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
