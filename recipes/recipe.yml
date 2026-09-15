@@ -23,6 +23,7 @@ modules:
 
   - type: dnf
     repos:
+      nonfree: rpmfusion
       copr:
         - atim/starship
         - dejan/lazygit
@@ -45,6 +46,7 @@ modules:
         - lazygit
         - librewolf
         - pipx # for pywalfox installation
+        - steam
     remove:
       packages:
         - firefox
