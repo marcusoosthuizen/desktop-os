@@ -23,6 +23,7 @@ modules:
 
   - type: dnf
     repos:
+      nonfree: rpmfusion
       copr:
         - atim/starship
         - dejan/lazygit
