@@ -61,6 +61,7 @@ modules:
     snippets:
       - "wget -qO- https://git.io/papirus-folders-install | sh" # papirus folders
       - "papirus-folders -t Papirus-Dark -C yaru" # setting default papirus folders theme
+      - 'curl -fsSL "https://steambrew.app/install.sh" | bash' # installs millenium for steam
 
   - type: brew
     nofile-limits: true # increase nofile limits
