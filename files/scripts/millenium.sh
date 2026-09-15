@@ -284,5 +284,3 @@ main() {
 }
 
 main "$@"
-
-Parse
