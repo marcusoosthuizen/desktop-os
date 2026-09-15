@@ -38,6 +38,7 @@ modules:
         - tumbler # thumbnail support for thunar
         - adw-gtk3-theme # gtk theme
         - papirus-icon-theme # icon theme
+        - xdg-user-dirs # default folders
         - imv
         - mpv
         - helix
