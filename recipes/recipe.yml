@@ -57,6 +57,7 @@ modules:
   - type: script
     snippets:
       - "wget -qO- https://git.io/papirus-folders-install | sh" # papirus folders
+      - "papirus-folders -t Papirus-Dark -C yaru" # setting default papirus folders theme
 
   - type: brew
     nofile-limits: true # increase nofile limits
@@ -70,5 +71,6 @@ modules:
   - type: chezmoi
     repository: "https://github.com/marcusoosthuizen/dotfiles" # my dotfiles repo
     file-conflict-policy: replace # override changed files with those from the repo
+    disable-update: true
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
