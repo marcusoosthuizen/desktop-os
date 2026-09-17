@@ -24,15 +24,10 @@ modules:
   - type: dnf
     repos:
       nonfree: negativo17
-      copr:
-        - atim/starship
-        - dejan/lazygit
       files:
         - https://repo.librewolf.net/librewolf.repo
     install:
       packages:
-        - starship
-        - cascadia-mono-nf-fonts # for foot & starship
         - thunar
         - gvfs-mtp # MTP support for GVFS
         - thunar-volman # auto USB management for thunar
@@ -42,8 +37,6 @@ modules:
         - xdg-user-dirs # default folders
         - imv
         - mpv
-        - helix
-        - lazygit
         - librewolf
         - pipx # for pywalfox installation
         - steam
