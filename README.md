@@ -6,6 +6,7 @@ This is my custom atomic image based off [Universal Blue](https://github.com/ubl
 - Fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [swayfx](https://github.com/wlrfx/swayfx)
 - Preinstalled with Thunar, imv & mpv
 - Replaces Firefox with [LibreWolf](https://librewolf.net/)
+- Replaces Vim with [Helix](https://github.com/helix-editor/helix)
 - Includes Steam with [Millennium](https://github.com/SteamClientHomebrew/Millennium)
 - [Brew](https://brew.sh/) package manager included for dev & cmd utilities
 - All applications themed to match the wallpaper
@@ -13,11 +14,8 @@ This is my custom atomic image based off [Universal Blue](https://github.com/ubl
 ## First Boot
 On first boot, [chezmoi](https://www.chezmoi.io/) initialises default configs from my [dotfiles](https://github.com/marcusoosthuizen/dotfiles) repo & installs some extra software (as brew packages or flatpaks)
 ### Brew Packages
-- [Pywalfox](https://github.com/Frewacom/pywalfox) to theme LibreWolf (technically not a brew package)
 - [Starship](https://github.com/starship/starship) for a stylish bash shell
 - [Lazygit](https://github.com/jesseduffield/lazygit) for managing repos
-- [Helix](https://github.com/helix-editor/helix) for text/code editing
-- [Fantasque Sans Mono NF Font](https://github.com/belluzj/fantasque-sans)
 - [Fastfetch](https://github.com/fastfetch-cli/fastfetch) cause every linux system needs it!
 
 ## Installation

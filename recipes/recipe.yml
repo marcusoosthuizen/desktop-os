@@ -28,6 +28,7 @@ modules:
         - https://repo.librewolf.net/librewolf.repo
     install:
       packages:
+        - cascadia-mono-nf-fonts # for foot & starship
         - thunar
         - gvfs-mtp # MTP support for GVFS
         - thunar-volman # auto USB management for thunar
@@ -37,6 +38,7 @@ modules:
         - xdg-user-dirs # default folders
         - imv
         - mpv
+        - helix
         - librewolf
         - pipx # for pywalfox installation
         - steam
