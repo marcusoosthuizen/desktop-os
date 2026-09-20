@@ -7,5 +7,5 @@ set -oue pipefail
 
 wget -O "starship-install" \
         "https://starship.rs/install.sh"
-sh starship-install --yes
+sh starship-install -y -b /usr/bin -p unknown-linux-gnu
 rm starship-install
