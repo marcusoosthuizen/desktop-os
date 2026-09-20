@@ -37,11 +37,10 @@ modules:
         - firefox-langpacks
 
   - type: script
-    snippets:
-      - "curl -sS https://starship.rs/install.sh | sh" # starship bash prompt
     scripts:
       - millenium.sh # steam theming
-      - "papirus-folders.sh" # change default papirus folder theme
+      - papirus-folders.sh # change default papirus folder theme
+      - starship.sh # starship bash prompt
 
   - type: brew
     nofile-limits: true # increase nofile limits
