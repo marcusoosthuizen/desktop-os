@@ -11,53 +11,37 @@ image-version: latest # IMAGE VERSION
 # module configuration, executed in order
 modules:
 
-  # swayfx & noctalia
-  - type: dnf
-    repos:
-      copr:
-        - swayfx/swayfx
-    install:
-      packages:
-        - swayfx
-        - noctalia
-
   - type: dnf
     repos:
       nonfree: negativo17
-      files:
-        - https://repo.librewolf.net/librewolf.repo
     install:
       packages:
-        - cascadia-mono-nf-fonts # for foot & starship
+        - noctalia
+        - miracle-wm
+        - adw-gtk3-theme # gtk theme
+        - papirus-icon-theme # icon theme
+        - imv
+        - foot
+        - cascadia-mono-nf-fonts # font for foot
+        - fastfetch # essential for every terminal!
+        - mpv
         - thunar
         - gvfs-mtp # MTP support for GVFS
         - thunar-volman # auto USB management for thunar
         - tumbler # thumbnail support for thunar
-        - adw-gtk3-theme # gtk theme
-        - papirus-icon-theme # icon theme
         - xdg-user-dirs # default folders
-        - imv
-        - mpv
-        - helix
-        - librewolf
-        - pipx # for pywalfox installation
         - steam
     remove:
       packages:
         - firefox
         - firefox-langpacks
-        - vim-common
-        - vim-data
-        - vim-enhanced
-        - vim-filesystem
-        - vim-minimal
 
   - type: script
     snippets:
-      - "wget -qO- https://git.io/papirus-folders-install | sh" # papirus folders
-      - "papirus-folders -t Papirus-Dark -C yaru" # setting default papirus folders theme
+      - "curl -sS https://starship.rs/install.sh | sh" # starship bash prompt
     scripts:
-      - millenium.sh
+      - millenium.sh # steam theming
+      - "papirus-folders.sh" # change default papirus folder theme
 
   - type: brew
     nofile-limits: true # increase nofile limits

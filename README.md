@@ -1,22 +1,26 @@
 # My Desktop OS &nbsp; [![bluebuild build badge](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml/badge.svg)](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml)
 
-This is my custom atomic image based off [Universal Blue](https://github.com/ublue-os/main). It includes a fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [swayfx](https://github.com/wlrfx/swayfx).
+This is my custom atomic image based off [Universal Blue](https://github.com/ublue-os/main). It includes a fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [miracle-wm](https://github.com/miracle-wm-org/miracle-wm).
 
 ## Changes from Base Image
-- Fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [swayfx](https://github.com/wlrfx/swayfx)
-- Preinstalled with Thunar, imv & mpv
-- Replaces Firefox with [LibreWolf](https://librewolf.net/)
-- Replaces Vim with [Helix](https://github.com/helix-editor/helix)
-- Includes Steam with [Millennium](https://github.com/SteamClientHomebrew/Millennium)
+- Fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [miracle-wm](https://github.com/miracle-wm-org/miracle-wm)
+- [foot](https://codeberg.org/dnkl/foot), [thunar](https://gitlab.xfce.org/xfce/thunar), [imv](https://sr.ht/~exec64/imv/) & [mpv](https://github.com/mpv-player/mpv) bundled in
+- Includes a fancy bash shell powered by [Starship](https://github.com/starship/starship)
+- Steam preinstalled with [Millennium](https://github.com/SteamClientHomebrew/Millennium)
 - [Brew](https://brew.sh/) package manager included for dev & cmd utilities
 - All applications themed to match the wallpaper
 
 ## First Boot
-On first boot, [chezmoi](https://www.chezmoi.io/) initialises default configs from my [dotfiles](https://github.com/marcusoosthuizen/dotfiles) repo & installs some extra software (as brew packages or flatpaks)
-### Brew Packages
-- [Starship](https://github.com/starship/starship) for a stylish bash shell
-- [Lazygit](https://github.com/jesseduffield/lazygit) for managing repos
-- [Fastfetch](https://github.com/fastfetch-cli/fastfetch) cause every linux system needs it!
+On first boot, [chezmoi](https://www.chezmoi.io/) initialises default configs from my [dotfiles](https://github.com/marcusoosthuizen/dotfiles) repo & installs the remaining applications as flatpaks:
+- [Zen](https://zen-browser.app/)
+- [Zed](https://zed.dev/)
+- [Vesktop](https://vencord.dev/)
+- [Prism](https://prismlauncher.org/)
+- [Obsidian](https://obsidian.md/)
+- [OBS](https://obsproject.com/)
+- [GIMP](https://www.gimp.org/)
+- [Feishin](https://github.com/jeffvli/feishin/)
+- [EasyTag](https://gitlab.gnome.org/GNOME/easytag)
 
 ## Installation
 

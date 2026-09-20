@@ -30,6 +30,8 @@
 
 # https://github.com/SteamClientHomebrew/Millennium/blob/main/scripts/install.sh
 
+set -oue pipefail
+
 readonly GITHUB_ACCOUNT="SteamClientHomebrew/Millennium"
 readonly RELEASES_URI="https://api.github.com/repos/${GITHUB_ACCOUNT}/releases"
 readonly DOWNLOAD_URI="https://github.com/${GITHUB_ACCOUNT}/releases/download"
