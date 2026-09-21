@@ -20,6 +20,7 @@ modules:
         - miracle-wm
         - xdg-desktop-portal-wlr # for screensharing
         - slurp # for screensharing too
+        - gdm
         - adw-gtk3-theme # gtk theme
         - papirus-icon-theme # icon theme
         - imv
@@ -57,5 +58,10 @@ modules:
     repository: "https://github.com/marcusoosthuizen/dotfiles" # my dotfiles repo
     file-conflict-policy: replace # override changed files with those from the repo
     disable-update: true
+
+  - type: systemd
+    system:
+      enabled:
+      - gdm.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
