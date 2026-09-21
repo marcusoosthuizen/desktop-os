@@ -19,8 +19,9 @@ modules:
         - noctalia
         - miracle-wm
         - xdg-desktop-portal-wlr # for screensharing
-        - slurp # for screensharing too
-        - gdm
+        - slurp # for screensharing/shotting
+        - grim # screenshot tool
+        - lightdm # display manager
         - adw-gtk3-theme # gtk theme
         - papirus-icon-theme # icon theme
         - imv
@@ -62,6 +63,6 @@ modules:
   - type: systemd
     system:
       enabled:
-      - gdm.service
+      - lightdm.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
