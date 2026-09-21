@@ -18,6 +18,8 @@ modules:
       packages:
         - noctalia
         - miracle-wm
+        - xdg-desktop-portal-wlr # for screensharing
+        - slurp # for screensharing too
         - adw-gtk3-theme # gtk theme
         - papirus-icon-theme # icon theme
         - imv
