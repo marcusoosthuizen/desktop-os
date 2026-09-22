@@ -1,9 +1,9 @@
 # My Desktop OS &nbsp; [![bluebuild build badge](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml/badge.svg)](https://github.com/marcusoosthuizen/desktop-os/actions/workflows/build.yml)
 
-This is my custom atomic image based off [Universal Blue](https://github.com/ublue-os/main). It includes a fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [miracle-wm](https://github.com/miracle-wm-org/miracle-wm).
+This is my custom atomic image based off [Universal Blue](https://github.com/ublue-os/main). It includes a fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [niri](https://github.com/niri-wm/niri).
 
 ## Changes from Base Image
-- Fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [miracle-wm](https://github.com/miracle-wm-org/miracle-wm)
+- Fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [niri](https://github.com/niri-wm/niri)
 - [foot](https://codeberg.org/dnkl/foot), [thunar](https://gitlab.xfce.org/xfce/thunar), [imv](https://sr.ht/~exec64/imv/) & [mpv](https://github.com/mpv-player/mpv) bundled in
 - Includes a fancy bash shell powered by [Starship](https://github.com/starship/starship)
 - Steam preinstalled with [Millennium](https://github.com/SteamClientHomebrew/Millennium)
