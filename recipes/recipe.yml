@@ -32,6 +32,8 @@ modules:
         - thunar-volman # auto USB management for thunar
         - tumbler # thumbnail support for thunar
         - xdg-user-dirs # default folders
+        - thunar-archive-plugin # archive plugin
+        - xarchiver # archive manager
         - llama-cpp
         - steam
         - wine # windows software support
