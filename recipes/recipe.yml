@@ -18,6 +18,8 @@ modules:
       packages:
         - noctalia
         - niri
+        - tailscale # accessing homelab
+        - syncthing # file syncing with homelab
         - adw-gtk3-theme # gtk theme
         - papirus-icon-theme # icon theme
         - imv
