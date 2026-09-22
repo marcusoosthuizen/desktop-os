@@ -7,6 +7,7 @@ This is my custom atomic image based off [Universal Blue](https://github.com/ubl
 - [foot](https://codeberg.org/dnkl/foot), [thunar](https://gitlab.xfce.org/xfce/thunar), [imv](https://sr.ht/~exec64/imv/) & [mpv](https://github.com/mpv-player/mpv) bundled in
 - Includes a fancy bash shell powered by [Starship](https://github.com/starship/starship)
 - Steam preinstalled with [Millennium](https://github.com/SteamClientHomebrew/Millennium)
+- [Llama.cpp](https://github.com/ggml-org/llama.cpp) for running local ai
 - [Brew](https://brew.sh/) package manager included for dev & cmd utilities
 - All applications themed to match the wallpaper
 

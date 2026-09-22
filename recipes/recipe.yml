@@ -32,7 +32,10 @@ modules:
         - thunar-volman # auto USB management for thunar
         - tumbler # thumbnail support for thunar
         - xdg-user-dirs # default folders
+        - llama-cpp
         - steam
+        - wine # windows software support
+        - wine-mono # windows software support
       exclude:
         - alacritty
         - waybar
