@@ -34,7 +34,6 @@ modules:
         - xdg-user-dirs # default folders
         - thunar-archive-plugin # archive plugin
         - xarchiver # archive manager
-        - llama-cpp
         - steam
         - wine # windows software support
         - wine-mono # windows software support
