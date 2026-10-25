@@ -18,6 +18,11 @@ modules:
       - millenium.sh # steam theming
       - papirus-folders.sh # change default papirus folder theme
 
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - JetBrainsMono
+
   - type: files
     files:
       - source: system
