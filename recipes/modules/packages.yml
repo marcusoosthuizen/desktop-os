@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: dnf
+    repos:
+      nonfree: negativo17
+    install:
+      packages:
+        - noctalia
+        - niri
+        - syncthing # file syncing with homelab
+        - adw-gtk3-theme # gtk theme
+        - papirus-icon-theme # icon theme
+        - imv
+        - foot
+        - cascadia-mono-nf-fonts # font for foot
+        - mpv
+        - thunar
+        - gvfs-mtp # MTP support for GVFS
+        - thunar-volman # auto USB management for thunar
+        - tumbler # thumbnail support for thunar
+        - xdg-user-dirs # default folders
+        - thunar-archive-plugin # archive plugin
+        - xarchiver # archive manager
+        - steam
+        - wine # windows software support
+        - wine-mono # windows software support
+      exclude:
+        - alacritty
+        - waybar
+        - fuzzel
+        - swaylock
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks
+
+  # latex stuff
+  - type: dnf
+    install:
+      packages:
+        - aspell-en # spell check
+        - texlive # latex
+        - biber # bibtex replacement
+
+  # cmd utils
+  - type: dnf
+    repos:
+      files:
+        - terra.repo
+    install:
+      packages:
+        - mise # dev env manager
+        - mise-bash-completion # completion for mise
+        - tailscale # accessing homelab
+        - fastfetch # essential for every terminal!
+        - starship # bash prompt
