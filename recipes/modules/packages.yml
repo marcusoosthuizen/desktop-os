@@ -7,7 +7,6 @@ modules:
       packages:
         - noctalia
         - niri
-        - syncthing # file syncing with homelab
         - adw-gtk3-theme # gtk theme
         - papirus-icon-theme # icon theme
         - imv
@@ -52,5 +51,4 @@ modules:
         - mise # dev env manager
         - mise-bash-completion # completion for mise
         - tailscale # accessing homelab
-        - fastfetch # essential for every terminal!
-        - starship # bash prompt
+        - tldr # man but shorter
