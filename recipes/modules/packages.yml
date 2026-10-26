@@ -21,7 +21,7 @@ modules:
         - xdg-user-dirs # default folders
         - steam
         - zed
-        - vencord-installer
+        - discord
         - zen-browser
       exclude:
         - alacritty
@@ -54,3 +54,4 @@ modules:
         - mise-bash-completion # completion for mise
         - tailscale # accessing homelab
         - tldr # man but shorter
+        - fantasquesansmono-nerd-fonts # epic font

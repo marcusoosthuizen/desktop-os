@@ -17,11 +17,7 @@ modules:
   - type: script
     scripts:
       - millenium.sh # steam theming
-
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - FantasqueSansMono
+      - vencord.sh # discord theming
 
   - type: files
     files:
