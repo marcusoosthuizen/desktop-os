@@ -6,7 +6,6 @@ modules:
       files:
         - terra.repo
     install:
-      install-weak-deps: false
       packages:
         - noctalia
         - niri
@@ -36,7 +35,6 @@ modules:
   # latex stuff
   - type: dnf
     install:
-      install-weak-deps: false
       packages:
         - aspell-en # spell check
         - texlive # latex
@@ -48,7 +46,6 @@ modules:
       files:
         - terra.repo
     install:
-      install-weak-deps: false
       packages:
         - mise # dev env manager
         - mise-bash-completion # completion for mise
