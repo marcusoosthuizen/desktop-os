@@ -21,7 +21,6 @@ modules:
         - xdg-user-dirs # default folders
         - steam
         - zed
-        - discord
         - vencord-installer
         - zen-browser
       exclude:
