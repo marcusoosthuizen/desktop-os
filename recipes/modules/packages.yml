@@ -4,6 +4,7 @@ modules:
     repos:
       nonfree: negativo17
     install:
+      install-weak-deps: false
       packages:
         - noctalia
         - niri
@@ -20,8 +21,6 @@ modules:
         - thunar-archive-plugin # archive plugin
         - xarchiver # archive manager
         - steam
-        - wine # windows software support
-        - wine-mono # windows software support
       exclude:
         - alacritty
         - waybar
@@ -35,6 +34,7 @@ modules:
   # latex stuff
   - type: dnf
     install:
+      install-weak-deps: false
       packages:
         - aspell-en # spell check
         - texlive # latex
@@ -46,6 +46,7 @@ modules:
       files:
         - terra.repo
     install:
+      install-weak-deps: false
       packages:
         - mise # dev env manager
         - mise-bash-completion # completion for mise

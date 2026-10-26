@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: default-flatpaks
+    configurations:
+      - scope: system
+        install:
+          - org.gtk.Gtk3theme.adw-gtk3 # gtk theming
+          - org.gtk.Gtk3theme.adw-gtk3-dark # gtk theming but black
+          - com.github.tchx84.Flatseal # managing flatpaks
+          - md.obsidian.Obsidian # notes
+          - com.github.PintaProject.Pinta # image editing
+          - org.localsend.localsend_app # local file sharing
+          - org.libreoffice.LibreOffice # office suite
+          - com.obsproject.Studio # screen recording
+          - org.kde.kdenlive # video editing
+          - org.prismlauncher.PrismLauncher # minecraft launcher
+          - com.vysp3r.ProtonPlus # extra proton stuff
+          - org.gnome.Boxes # virtual machines
+          - org.gnome.EasyTAG # music tagging
+          - com.usebottles.bottles # windows software
+          - page.codeberg.libre_menu_editor.LibreMenuEditor # hiding apps

@@ -12,11 +12,11 @@ image-version: latest # IMAGE VERSION
 modules:
 
   - from-file: modules/packages.yml
+  - from-file: modules/flatpaks.yml
 
   - type: script
     scripts:
       - millenium.sh # steam theming
-      - papirus-folders.sh # change default papirus folder theme
 
   - type: fonts
     fonts:
