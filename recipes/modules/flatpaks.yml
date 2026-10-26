@@ -18,4 +18,5 @@ modules:
           - org.gnome.Boxes # virtual machines
           - org.gnome.EasyTAG # music tagging
           - com.usebottles.bottles # windows software
+          - org.jeffvli.feishin # music player
           - page.codeberg.libre_menu_editor.LibreMenuEditor # hiding apps

@@ -3,6 +3,8 @@ modules:
   - type: dnf
     repos:
       nonfree: negativo17
+      files:
+        - terra.repo
     install:
       install-weak-deps: false
       packages:
@@ -13,14 +15,15 @@ modules:
         - imv
         - foot
         - mpv
-        - thunar
+        - nautilus
+        - file-roller-nautilus # file roller support
         - gvfs-mtp # MTP support for GVFS
-        - thunar-volman # auto USB management for thunar
-        - tumbler # thumbnail support for thunar
         - xdg-user-dirs # default folders
-        - thunar-archive-plugin # archive plugin
-        - xarchiver # archive manager
         - steam
+        - zed
+        - discord
+        - vencord-installer
+        - zen-browser
       exclude:
         - alacritty
         - waybar
