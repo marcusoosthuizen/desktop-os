@@ -17,7 +17,6 @@ modules:
   - type: script
     scripts:
       - millenium.sh # steam theming
-      - vencord.sh # discord theming
 
   - type: files
     files:
