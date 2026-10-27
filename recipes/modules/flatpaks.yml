@@ -19,4 +19,5 @@ modules:
           - org.gnome.EasyTAG # music tagging
           - com.usebottles.bottles # windows software
           - org.jeffvli.feishin # music player
+          - com.discordapp.Discord # DISCORD RAAAAAAH
           - page.codeberg.libre_menu_editor.LibreMenuEditor # hiding apps

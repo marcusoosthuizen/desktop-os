@@ -20,7 +20,6 @@ modules:
         - xdg-user-dirs # default folders
         - steam
         - zed
-        - equibop
         - zen-browser
       exclude:
         - alacritty
