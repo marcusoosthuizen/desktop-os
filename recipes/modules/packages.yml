@@ -19,6 +19,7 @@ modules:
         - gvfs-mtp # MTP support for GVFS
         - xdg-user-dirs # default folders
         - steam
+        - discord
         - zed
         - zen-browser
       exclude:
