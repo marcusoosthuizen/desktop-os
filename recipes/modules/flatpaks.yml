@@ -7,6 +7,7 @@ modules:
           - org.gtk.Gtk3theme.adw-gtk3 # gtk theming
           - org.gtk.Gtk3theme.adw-gtk3-dark # gtk theming but black
           - com.github.tchx84.Flatseal # managing flatpaks
+          - it.mijorus.gearlever # managing appimages
           - md.obsidian.Obsidian # notes
           - com.github.PintaProject.Pinta # image editing
           - org.localsend.localsend_app # local file sharing

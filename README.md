@@ -4,23 +4,30 @@ This is my custom atomic image based off [Universal Blue](https://github.com/ubl
 
 ## Changes from Base Image
 - Fully configured setup using [noctalia](https://github.com/noctalia-dev/noctalia) & [niri](https://github.com/niri-wm/niri)
-- [foot](https://codeberg.org/dnkl/foot), [thunar](https://gitlab.xfce.org/xfce/thunar), [imv](https://sr.ht/~exec64/imv/) & [mpv](https://github.com/mpv-player/mpv) bundled in
-- Includes a fancy bash shell powered by [Starship](https://github.com/starship/starship)
-- Steam preinstalled with [Millennium](https://github.com/SteamClientHomebrew/Millennium)
-- [Brew](https://brew.sh/) package manager included for dev & cmd utilities
+- [foot](https://codeberg.org/dnkl/foot), [nautilus](https://apps.gnome.org/Nautilus/), [imv](https://sr.ht/~exec64/imv/), [mpv](https://github.com/mpv-player/mpv) & discord bundled in
+- Firefox replaced with [Zen Browser](https://zen-browser.app/)
+- For gaming, Steam is preinstalled with [Millennium](https://github.com/SteamClientHomebrew/Millennium)
+- [Mise](https://mise.jdx.dev/) for dev & cli tools and [Zed](https://zed.dev/) for code editing
 - All applications themed to match the wallpaper
 
 ## First Boot
 On first boot, [chezmoi](https://www.chezmoi.io/) initialises default configs from my [dotfiles](https://github.com/marcusoosthuizen/dotfiles) repo & installs the remaining applications as flatpaks:
-- [Zen](https://zen-browser.app/)
-- [Zed](https://zed.dev/)
-- [Vesktop](https://vencord.dev/)
-- [Prism](https://prismlauncher.org/)
-- [Obsidian](https://obsidian.md/)
-- [OBS](https://obsproject.com/)
-- [GIMP](https://www.gimp.org/)
-- [Feishin](https://github.com/jeffvli/feishin/)
+- [Boxes](https://apps.gnome.org/Boxes/)
+- [Bottles](https://usebottles.com/)
 - [EasyTag](https://gitlab.gnome.org/GNOME/easytag)
+- [Feishin](https://github.com/jeffvli/feishin/)
+- [Kdenlive](https://kdenlive.org/)
+- [Localsend](https://localsend.org/)
+- [Libreoffice](https://www.libreoffice.org/)
+- [OBS](https://obsproject.com/)
+- [Obsidian](https://obsidian.md/)
+- [Pinta](https://www.pinta-project.com/)
+- [Prism](https://prismlauncher.org/)
+- [ProtonPlus](https://protonplus.vysp3r.com/)
+
+Mise also installs replacements for various cli cmds (eza, zoxide, etc) and other tools like [copilot](https://github.com/github/copilot-cli), [starship](https://github.com/starship/starship), [syncthing](https://github.com/syncthing/syncthing), [tailscale](https://github.com/tailscale/tailscale) & [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+
+
 
 ## Installation
 

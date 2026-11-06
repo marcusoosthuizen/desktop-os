@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: script
+    scripts:
+      - millenium.sh # steam theming
+
+  - type: chezmoi
+    repository: "https://github.com/marcusoosthuizen/dotfiles" # my dotfiles repo
+    file-conflict-policy: replace # override changed files with those from the repo
+    disable-update: true

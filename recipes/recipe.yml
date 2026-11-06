@@ -13,14 +13,6 @@ modules:
 
   - from-file: modules/packages.yml
   - from-file: modules/flatpaks.yml
-
-  - type: script
-    scripts:
-      - millenium.sh # steam theming
-
-  - type: chezmoi
-    repository: "https://github.com/marcusoosthuizen/dotfiles" # my dotfiles repo
-    file-conflict-policy: replace # override changed files with those from the repo
-    disable-update: true
+  - from-file: modules/misc.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
