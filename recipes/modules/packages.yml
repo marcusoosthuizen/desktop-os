@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 modules:
+  # general applications
   - type: dnf
     repos:
       nonfree: negativo17
@@ -38,6 +39,7 @@ modules:
       packages:
         - aspell-en # spell check
         - texlive # latex
+        - latexmk # make for latex
         - biber # bibtex replacement
 
   # cmd utils
