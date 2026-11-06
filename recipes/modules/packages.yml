@@ -38,7 +38,7 @@ modules:
     install:
       packages:
         - aspell-en # spell check
-        - texlive-scheme-full # latex
+        - texlive-scheme-basic # latex
         - latexmk # make for latex
         - biber # bibtex replacement
 
