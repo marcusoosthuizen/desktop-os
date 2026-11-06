@@ -51,4 +51,5 @@ modules:
         - mise-bash-completion # completion for mise
         - tailscale # accessing homelab
         - tldr # man but shorter
+        - libwebp-tools # for converting stuff to webp
         - fantasquesansmono-nerd-fonts # epic font
