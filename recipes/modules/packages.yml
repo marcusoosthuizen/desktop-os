@@ -33,15 +33,6 @@ modules:
         - firefox
         - firefox-langpacks
 
-  # latex stuff
-  - type: dnf
-    install:
-      packages:
-        - aspell-en # spell check
-        - texlive-scheme-basic # latex
-        - latexmk # make for latex
-        - biber # bibtex replacement
-
   # cmd utils
   - type: dnf
     repos:
@@ -55,3 +46,4 @@ modules:
         - tldr # man but shorter
         - libwebp-tools # for converting stuff to webp
         - fantasquesansmono-nerd-fonts # epic font
+        - aspell-en # spell check
