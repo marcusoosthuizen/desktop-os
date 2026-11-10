@@ -32,6 +32,8 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+        - kmscon # removes this trash terminal
+        - kmscon-freetype
 
   # cmd utils
   - type: dnf
