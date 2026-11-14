@@ -175,25 +175,7 @@ install_millennium() {
 post_install() {
     sudo chmod +x /usr/lib/millennium/libmillennium_pvs64 2>/dev/null || true
     sudo chmod +x /usr/lib/millennium/libmillennium_luavm_x86 2>/dev/null || true
-
-    #log "installing for '${USER}'"
-
-    #beta_file="${HOME}/.steam/steam/package/beta"
-
-    # make sure to force steam stable for the first install.
-    # if the user wants beta they can set it after install.
-    # normally its fine, but many users forget they have it enabled on first install,
-    # and then face issues.
-    #if [ -f "${beta_file}" ]; then
-    #    log "removing beta '$(cat "${beta_file}")' in favor for stable."
-    #    rm "${beta_file}"
-    #fi
-
-    # create symlinks for millenniums preload bootstraps.
-    #mkdir -p "${HOME}/.steam/steam/ubuntu12_32" "${HOME}/.steam/steam/ubuntu12_64"
-    #ln -sf /usr/lib/millennium/libmillennium_bootstrap_x86.so   "${HOME}/.steam/steam/ubuntu12_32/libXtst.so.6"
-    #ln -sf /usr/lib/millennium/libmillennium_bootstrap_hhx64.so "${HOME}/.steam/steam/ubuntu12_64/libXtst.so.6"
-    #ln -sf /usr/lib/millennium/libmillennium_hhx64.so           "${HOME}/.steam/steam/ubuntu12_64/libmillennium_hhx64.so"
+    sudo chmod +x /usr/lib/millennium/libmillennium_luavm_x64 2>/dev/null || true
 }
 
 cleanup() {
