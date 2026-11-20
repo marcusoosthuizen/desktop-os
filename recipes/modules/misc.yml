@@ -5,10 +5,6 @@ modules:
       enabled:
         - getty@.service # re-enables the old terminal cause kmscon makes me want to kms
 
-  - type: script
-    scripts:
-      - millenium.sh # steam theming
-
   - type: chezmoi
     repository: "https://github.com/marcusoosthuizen/dotfiles" # my dotfiles repo
     file-conflict-policy: replace # override changed files with those from the repo
